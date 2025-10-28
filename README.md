@@ -271,7 +271,7 @@ If you use this project in your research, please cite:
 ```bibtex
 @software{cuda_conv_accelerator,
   title={CUDA Convolution Accelerator},
-  author={Your Name},
+  author={Ayomide Caleb Adekoya},
   year={2025},
   url={https://github.com/elcruzo/cuda-conv}
 }
