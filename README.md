@@ -299,9 +299,5 @@ Contributions welcome! Please:
 ## Contact
 
 - GitHub: [@elcruzo](https://github.com/elcruzo)
-- Email: your.email@example.com
-
----
-
-**Built with ❤️ using CUDA + CuPy**
+- X: [@elcruzosym](https://www.x.com/elcruzosym)
 
