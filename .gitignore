@@ -57,3 +57,14 @@ Thumbs.db
 .coverage
 htmlcov/
 
+.cursor/
+idea.md
+cuda-conv.zip
+FINAL_SUMMARY.txt
+YOUR_ACTION_PLAN.md
+GETTING_STARTED.md
+QUICKSTART.md
+README_FIRST.txt
+PROJECT_SUMMARY.md
+ARCHITECTURE.md
+IMPLEMENTATION_CHECKLIST.md

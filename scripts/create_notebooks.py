@@ -179,7 +179,7 @@ def create_colab_setup_notebook():
                 "outputs": [],
                 "source": [
                     "# Option A: Clone from GitHub (replace with your repo URL)\\n",
-                    "!git clone https://github.com/YOUR_USERNAME/cuda-conv.git\\n",
+                    "!git clone https://github.com/elcruzo/cuda-conv.git\\n",
                     "%cd cuda-conv"
                 ]
             },

@@ -40,13 +40,13 @@ CUDA Kernel (optimized)
 3. Run all cells to install dependencies and clone the repo
 4. Open `notebooks/01_demo_speed.ipynb` for benchmarks
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/cuda-conv/blob/main/setup_colab.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/elcruzo/cuda-conv/blob/main/setup_colab.ipynb)
 
 ### Local Installation (Requires NVIDIA GPU)
 
 ```bash
 # Clone repository
-git clone https://github.com/YOUR_USERNAME/cuda-conv.git
+git clone https://github.com/elcruzo/cuda-conv.git
 cd cuda-conv
 
 # Install dependencies
@@ -273,7 +273,7 @@ If you use this project in your research, please cite:
   title={CUDA Convolution Accelerator},
   author={Your Name},
   year={2025},
-  url={https://github.com/YOUR_USERNAME/cuda-conv}
+  url={https://github.com/elcruzo/cuda-conv}
 }
 ```
 
@@ -298,7 +298,7 @@ Contributions welcome! Please:
 
 ## Contact
 
-- GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
+- GitHub: [@elcruzo](https://github.com/elcruzo)
 - Email: your.email@example.com
 
 ---
