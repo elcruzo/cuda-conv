@@ -32,7 +32,9 @@ void convolve2d_naive(
             iy = max(0, min(iy, height - 1));
             ix = max(0, min(ix, width - 1));
             
-            sum += input[iy * width + ix] * kernel[ky * ksize + kx];
+            // Flip kernel for true convolution (not cross-correlation)
+            int k_idx = (ksize - 1 - ky) * ksize + (ksize - 1 - kx);
+            sum += input[iy * width + ix] * kernel[k_idx];
         }
     }
     
@@ -95,7 +97,9 @@ void convolve2d_optimized(
         
         for (int ky = 0; ky < ksize; ky++) {
             for (int kx = 0; kx < ksize; kx++) {
-                sum += tile[ty + ky][tx + kx] * s_kernel[ky * ksize + kx];
+                // Flip kernel for true convolution (not cross-correlation)
+                int k_idx = (ksize - 1 - ky) * ksize + (ksize - 1 - kx);
+                sum += tile[ty + ky][tx + kx] * s_kernel[k_idx];
             }
         }
         
