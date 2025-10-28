@@ -63,8 +63,10 @@ def convolve(image, kernel, use_shared_mem=True, return_numpy=True, warmup=False
     if image_gpu.ndim == 3:
         channels = []
         for c in range(image_gpu.shape[2]):
+            # Make sure channel is contiguous for CUDA kernel
+            channel_img = cp.ascontiguousarray(image_gpu[:, :, c])
             channel_result = _convolve_single_channel(
-                image_gpu[:, :, c], kernel_gpu, use_shared_mem, warmup
+                channel_img, kernel_gpu, use_shared_mem, warmup
             )
             channels.append(channel_result)
         result_gpu = cp.stack(channels, axis=2)
