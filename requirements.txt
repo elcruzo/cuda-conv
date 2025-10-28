@@ -1,4 +1,4 @@
-cupy-cuda11x>=12.0.0
+cupy-cuda12x>=12.0.0  # Use cuda12x for CUDA 12.x, cuda11x for CUDA 11.x
 numpy>=1.24.0
 scipy>=1.10.0
 matplotlib>=3.7.0
