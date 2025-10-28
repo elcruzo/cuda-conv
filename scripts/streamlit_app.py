@@ -28,7 +28,7 @@ def check_cuda():
     """Check if CUDA is available."""
     try:
         import cupy as cp
-        device_name = cp.cuda.Device().name.decode()
+        device_name = cp.cuda.runtime.getDeviceProperties(0)['name'].decode()
         return True, device_name
     except (ImportError, RuntimeError) as e:
         return False, str(e)

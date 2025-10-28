@@ -122,7 +122,7 @@ Examples:
     # Check if CUDA is available
     try:
         import cupy as cp
-        print(f"✓ CUDA available - GPU: {cp.cuda.Device().name.decode()}")
+        print(f"✓ CUDA available - GPU: {cp.cuda.runtime.getDeviceProperties(0)['name'].decode()}")
     except (ImportError, RuntimeError) as e:
         print(f"✗ CUDA not available: {e}")
         print("This tool requires CUDA. Please run in Google Colab or on a machine with NVIDIA GPU.")
