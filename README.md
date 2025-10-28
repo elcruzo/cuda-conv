@@ -2,7 +2,7 @@
 
 A lightweight CUDA kernel implementation for accelerated 2D image convolution, built with CuPy. Achieves **20x+ speedup** over CPU on large images.
 
-![CUDA](https://img.shields.io/badge/CUDA-11.x%2B-green)
+![CUDA](https://img.shields.io/badge/CUDA-12.x%2B-green)
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
